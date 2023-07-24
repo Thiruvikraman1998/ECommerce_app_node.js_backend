@@ -18,7 +18,7 @@ class _ShopNowState extends State<ShopNow> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: BottomBar(),
+      home: const BottomBar(),
     );
   }
 }
