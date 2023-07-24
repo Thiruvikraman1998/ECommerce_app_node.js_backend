@@ -15,8 +15,13 @@ class _BottomBarState extends State<BottomBar> {
         title: const Text("Title"),
       ),
       body: Center(
-          child:
-              ElevatedButton(onPressed: () {}, child: const Text("Continue"))),
+          child: Row(
+        children: [
+          ElevatedButton(onPressed: () {}, child: const Text("Continue")),
+          SizedBox(width: 20),
+          TextButton(onPressed: () {}, child: Text("Click me"))
+        ],
+      )),
     );
   }
 }

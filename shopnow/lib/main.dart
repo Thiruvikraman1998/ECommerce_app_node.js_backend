@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopnow/screens/onboarding_screen.dart';
 import 'package:shopnow/utils/app_colors.dart';
 import 'package:shopnow/widgets/bottom_bar.dart';
 
@@ -38,6 +39,14 @@ class _ShopNowState extends State<ShopNow> {
             ),
           ),
         ),
+        textButtonTheme: TextButtonThemeData(
+          style: const ButtonStyle().copyWith(
+            backgroundColor:
+                const MaterialStatePropertyAll(AppColors.bgcolorLight),
+            foregroundColor:
+                const MaterialStatePropertyAll(AppColors.textButtonColor),
+          ),
+        ),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
@@ -59,8 +68,16 @@ class _ShopNowState extends State<ShopNow> {
             ),
           ),
         ),
+        textButtonTheme: TextButtonThemeData(
+          style: const ButtonStyle().copyWith(
+            backgroundColor:
+                const MaterialStatePropertyAll(AppColors.bgcolorDark),
+            foregroundColor:
+                const MaterialStatePropertyAll(AppColors.textButtonColor),
+          ),
+        ),
       ),
-      home: const BottomBar(),
+      home: const OnboardingScreen(),
     );
   }
 }
