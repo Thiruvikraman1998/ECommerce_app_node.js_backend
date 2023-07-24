@@ -77,7 +77,7 @@ class _ShopNowState extends State<ShopNow> {
           ),
         ),
       ),
-      home: const OnboardingScreen(),
+      home: const BottomBar(),
     );
   }
 }

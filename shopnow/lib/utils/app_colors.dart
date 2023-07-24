@@ -9,8 +9,10 @@ class AppColors {
   static const Color discountColor = Color(0XFFED6767);
   static const Color greenLight =
       Color(0XFFEDF5E5); // or this Color(0XFF9DB882);
+  static const Color navBarTabBg = Color(0XFFDCECCC);
 
   static const Color greyDark = Color(0xFF393E4B);
+  static const Color greyLight = Color(0xFFF3F4F4);
   static const Color witeColor = Colors.white;
   static const Color textGreen = Color(0xFF62AA28);
 }
